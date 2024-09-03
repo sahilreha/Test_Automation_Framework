@@ -16,67 +16,51 @@ public class WebDriverFactory {
         WebDriver driver = null;
 
         if (browser.equalsIgnoreCase("chrome")) {
-
-            ChromeOptions chromeOptions = (ChromeOptions) getBrowserOptions("chrome");
+            ChromeOptions chromeOptions = new ChromeOptions();
+            if (TestConfig.enableBrowserOptions.equalsIgnoreCase("true")) {
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--disable-gpu");
+                chromeOptions.addArguments("--no-sandbox");
+            }
 
             if (TestConfig.executionPlatform.equalsIgnoreCase("local")) {
                 driver = new ChromeDriver(chromeOptions);
-            }
-
-            else if (TestConfig.executionPlatform.equalsIgnoreCase("remote")) {
+            } else if (TestConfig.executionPlatform.equalsIgnoreCase("remote")) {
                 chromeOptions.setPlatformName("linux");
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
             }
         }
 
         else if (browser.equalsIgnoreCase("firefox")) {
-
-            FirefoxOptions firefoxOptions = (FirefoxOptions) getBrowserOptions("firefox");
+            FirefoxOptions firefoxOptions = new FirefoxOptions();
+            if (TestConfig.enableBrowserOptions.equalsIgnoreCase("true")) {
+                firefoxOptions.addArguments("--headless");
+                firefoxOptions.addArguments("--disable-gpu");
+                firefoxOptions.addArguments("--no-sandbox");
+            }
 
             if (TestConfig.executionPlatform.equalsIgnoreCase("local")) {
                 driver = new FirefoxDriver(firefoxOptions);
-            }
-            else if (TestConfig.executionPlatform.equalsIgnoreCase("remote")) {
+            } else if (TestConfig.executionPlatform.equalsIgnoreCase("remote")) {
                 firefoxOptions.setPlatformName("linux");
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), firefoxOptions);
             }
+        } else {
+            throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
 
         if (driver != null) {
-            driver.get("https://www.saucedemo.com/");
-            driver.manage().window().maximize();
             ThreadLocalDriverManager.getInstance().setDriver(driver);
         }
-
-        else {
-            throw new IllegalArgumentException("Browser type or platform is not supported: " + browser);
-        }
     }
 
-    private static Object getBrowserOptions(String browser) {
-        if (browser.equalsIgnoreCase("chrome")) {
-            ChromeOptions options = new ChromeOptions();
-            addCommonArguments(options);
-            return options;
-        } else if (browser.equalsIgnoreCase("firefox")) {
-            FirefoxOptions options = new FirefoxOptions();
-            addCommonArguments(options);
-            return options;
-        }
-        throw new IllegalArgumentException("Browser type is not supported: " + browser);
-    }
-
-    private static void addCommonArguments(Object options) {
-        if (options instanceof ChromeOptions) {
-            ChromeOptions chromeOptions = (ChromeOptions) options;
-            chromeOptions.addArguments("--headless");
-            chromeOptions.addArguments("--disable-gpu");
-            chromeOptions.addArguments("--no-sandbox");
-        } else if (options instanceof FirefoxOptions) {
-            FirefoxOptions firefoxOptions = (FirefoxOptions) options;
-            firefoxOptions.addArguments("--headless");
-            firefoxOptions.addArguments("--disable-gpu");
-            firefoxOptions.addArguments("--no-sandbox");
+    public static void launchUrl(String url) {
+        WebDriver driver = ThreadLocalDriverManager.getCurrentDriver();
+        if (driver != null) {
+            driver.get(url);
+            driver.manage().window().maximize();
+        } else {
+            throw new IllegalStateException("WebDriver instance is not initialized. Call openBrowser() first.");
         }
     }
 }

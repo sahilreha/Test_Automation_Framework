@@ -1,0 +1,13 @@
+{
+  "firstname": "firstName",
+  "lastname": "lastName",
+  "birthdate": "2000-10-10",
+  "email": "testEmail",
+  "phone": "9876543210",
+  "street1": "testStreet1",
+  "street2": "testStreet2",
+  "city": "testCity",
+  "state": "testState",
+  "postal": "124050",
+  "country": "IN"
+}

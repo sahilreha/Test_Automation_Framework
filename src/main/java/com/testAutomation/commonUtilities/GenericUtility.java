@@ -1,4 +1,4 @@
-package com.testAutomation.utilities;
+package com.testAutomation.commonUtilities;
 
 import io.appium.java_client.AppiumDriver;
 import org.apache.commons.io.FileUtils;
@@ -34,25 +34,24 @@ public class GenericUtility {
         this.appiumDriver = appiumDriver;
     }
 
-    public String takeScreenshot(String imageName){
+    public String takeScreenshot(String imageName) {
         File sourceFile = null;
-        if(driver!=null){
+        if (driver != null) {
             TakesScreenshot screenshot = (TakesScreenshot) driver;
             sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
-        }
-        else if (appiumDriver!=null) {
+        } else if (appiumDriver != null) {
             TakesScreenshot screenshot = (TakesScreenshot) appiumDriver;
             sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
         }
+
         String addScreenshotPath = System.getProperty("user.dir")
-                + "/screenshots/" + getTimestamp() + imageName ;
+                + "/screenshots/" + getTimestamp() + "_" + imageName;
 
         try {
             assert sourceFile != null;
             FileUtils.copyFile(sourceFile, new File(addScreenshotPath));
-        }
-        catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to save screenshot: " + addScreenshotPath, e);
         }
         return addScreenshotPath;
     }
@@ -64,6 +63,14 @@ public class GenericUtility {
 //    }
 
     public static String getTimestamp() {
-        return new SimpleDateFormat("hh_mm_dd_MM_YY").format(new Date());
+        return new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+    }
+
+    public static int getRandomNumber(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/ss/yy");
+        Date date = new Date();
+        String value = simpleDateFormat.format(date);
+        String words= value.replace("/","");
+        return Integer.parseInt(words);
     }
 }

@@ -5,21 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8657be8-6386-4e31-ae6b-275f084b93f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/utilities/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/utilities/ExtentReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/utilities/GenericUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/browsermanagement/TestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/browsermanagement/ThreadLocalDriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/browsermanagement/WebDriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/common/WebTestAutomationUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/webApplications/dummyAppPages/AddContactPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/webApplications/dummyAppPages/BasePages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/webApplications/dummyAppPages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/webApplications/dummyAppPages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/webApplications/dummyAppPages/SignUpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automationFramework/baseTestUtility/BaseTestUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automationFramework/baseTestUtility/TestDataUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automationFramework/dataobjects/CreateAccountTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automationFramework/dataobjects/LoginTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automationFramework/dataobjects/SignUpTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automationFramework/testSuite/dummyAppTestSuite/DummyBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automationFramework/testSuite/dummyAppTestSuite/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/webtestdata/createnewaccount.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/webtestdata/logintestdata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/webtestdata/signuptestdata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BrowserPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testAutomation/commonUtilities/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/commonUtilities/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testAutomation/commonUtilities/ExtentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/commonUtilities/ExtentReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testAutomation/commonUtilities/GenericUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/commonUtilities/GenericUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/browsermanagement/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/browsermanagement/TestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/browsermanagement/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/browsermanagement/WebDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/common/WebTestAutomationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testAutomation/webUI/common/WebTestAutomationUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +49,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "sahilreha"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sahilreha/Test_Automation_Framework.git",
+    "accountId": "ebf7b125-4e0c-44cb-917a-f71d2188e079"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -57,18 +77,130 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "frameworksetup",
+    "TestNG.LoginTest.createNewAccountTest.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.loginWithExistingAccountTest (1).executor": "Run",
+    "TestNG.LoginTest.loginWithExistingAccountTest.executor": "Run",
+    "TestNG.LoginTest.verifyAddAccountTest.executor": "Run",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sahil/IdeaProjects/Test_Automation_Framework/src/main/resources"
+    "last_opened_file_path": "C:/Users/Sahil/IdeaProjects/Test_Automation_Framework/src/test/java/com/automationFramework/testSuite/dummyAppTestSuite"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Sahil\IdeaProjects\Test_Automation_Framework\src\main\resources" />
+      <recent name="C:\Users\Sahil\IdeaProjects\Test_Automation_Framework\src\test\java\com\automationFramework\testSuite\dummyAppTestSuite" />
+      <recent name="C:\Users\Sahil\IdeaProjects\Test_Automation_Framework\src\test\resources\webtestdata" />
+      <recent name="C:\Users\Sahil\IdeaProjects\Test_Automation_Framework\src\test\java\com\automationFramework\baseTestUtility" />
+      <recent name="C:\Users\Sahil\IdeaProjects\Test_Automation_Framework\src\test\java\com\automationFramework\testSuite" />
+      <recent name="C:\Users\Sahil\IdeaProjects\Test_Automation_Framework\src\main\java\com\testAutomation\webUI\webApplications" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.automationFramework.baseTestUtility" />
+      <recent name="com.automationFramework.testUtilis" />
+      <recent name="com.automationFramework.baseTestUtility.base_test_automation" />
       <recent name="com.testAutomation.utilities" />
     </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LoginTest">
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test_Automation_Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automationFramework.testSuite.dummyAppTestSuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automationFramework.testSuite.dummyAppTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="com.automationFramework.testSuite.dummyAppTestSuite.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.createNewAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test_Automation_Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automationFramework.testSuite.dummyAppTestSuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automationFramework.testSuite.dummyAppTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="com.automationFramework.testSuite.dummyAppTestSuite.LoginTest" />
+      <option name="METHOD_NAME" value="createNewAccountTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginWithExistingAccountTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test_Automation_Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automationFramework.testSuite.dummyAppTestSuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automationFramework.testSuite.dummyAppTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="com.automationFramework.testSuite.dummyAppTestSuite.LoginTest" />
+      <option name="METHOD_NAME" value="loginWithExistingAccountTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginWithExistingAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test_Automation_Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automationFramework.testSuite.dummyApplication.uaModuleOneTestCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automationFramework.testSuite.dummyApplication.uaModuleOneTestCases" />
+      <option name="MAIN_CLASS_NAME" value="com.automationFramework.testSuite.dummyApplication.uaModuleOneTestCases.LoginTest" />
+      <option name="METHOD_NAME" value="loginWithExistingAccountTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.verifyAddAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test_Automation_Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automationFramework.testSuite.dummyAppTestSuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automationFramework.testSuite.dummyAppTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="com.automationFramework.testSuite.dummyAppTestSuite.LoginTest" />
+      <option name="METHOD_NAME" value="verifyAddAccountTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginTest.verifyAddAccountTest" />
+        <item itemvalue="TestNG.LoginTest.createNewAccountTest" />
+        <item itemvalue="TestNG.LoginTest.loginWithExistingAccountTest (1)" />
+        <item itemvalue="TestNG.LoginTest.loginWithExistingAccountTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,5 +212,15 @@
       <updated>1725372133340</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

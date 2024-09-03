@@ -12,6 +12,6 @@ public class TestConfig {
     public static String executionPlatform = System.getProperty("platform", "local");
 
     // Flag to enable or disable additional browser options
-    public static String enableBrowserOptions = System.getProperty("enableBrowserOptions", "true");
+    public static String enableBrowserOptions = System.getProperty("enableBrowserOptions", "false");
 
 }

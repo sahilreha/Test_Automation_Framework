@@ -1,4 +1,4 @@
-package com.testAutomation.utilities;
+package com.testAutomation.commonUtilities;
 
 import com.aventstack.extentreports.ExtentTest;
 

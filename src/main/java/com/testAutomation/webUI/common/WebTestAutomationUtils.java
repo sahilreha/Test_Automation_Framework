@@ -16,7 +16,7 @@ import java.util.*;
 
 public class WebTestAutomationUtils {
     private static final Logger logger = LogManager.getLogger(WebTestAutomationUtils.class);
-    private static final long DEFAULT_WAIT_TIME = 120;
+    private static final long DEFAULT_WAIT_TIME = 30;
 
     private WebDriverWait getWait() {
         return new WebDriverWait(ThreadLocalDriverManager.getCurrentDriver(), Duration.ofSeconds(DEFAULT_WAIT_TIME));
